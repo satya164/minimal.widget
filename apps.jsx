@@ -3,8 +3,8 @@ import { styled, run } from 'uebersicht';
 export const refreshFrequency = false;
 
 const colors = {
-  background: '#651b1e',
-  text: '#f9f8a6',
+  background: 'rgba(0, 0, 0, .9)',
+  text: '#fff',
 };
 
 const Panel = styled('div')`
@@ -17,8 +17,7 @@ const Panel = styled('div')`
   font-size: 12px;
   color: ${colors.text};
   fill: currentColor;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: transparent;
 
   > * {
     padding: 6px;

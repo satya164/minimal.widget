@@ -1,8 +1,8 @@
 import { styled, run } from 'uebersicht';
 
 const colors = {
-  background: '#651b1e',
-  text: '#f9f8a6',
+  background: 'rgba(0, 0, 0, .9)',
+  text: '#fff',
 };
 
 const execute = (action, interval) => {
@@ -54,7 +54,7 @@ const Panel = styled('div')`
   font-size: 12px;
   color: ${colors.text};
   fill: currentColor;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   -webkit-backdrop-filter: blur(10px);
 `;
 
