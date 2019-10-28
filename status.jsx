@@ -124,7 +124,7 @@ const days = [
   'Saturday',
 ];
 
-export const render = ({ date = Date.now(), cpu, battery = 0, power }) => {
+export const render = ({ date = new Date(), cpu, battery = 0, power }) => {
   return (
     <Panel>
       <Item onClick={() => run('open -a "Activity Monitor"')}>
